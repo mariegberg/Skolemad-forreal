@@ -4,11 +4,390 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind Starter Template</title>
+    <title>Homepage - Skolemad</title>
     <link rel="stylesheet" href="tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika:wght@300;400;500;600;700&family=Yrsa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika:wght@300;400;500;600;700&family=Yrsa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <button class="btn btn-primary">hello</button>
+  <body class="bg-white">
+    <header
+      class="navbar laptop:hidden text-neutral-content swing-in-top-fwd fixed sticky top-0 z-50 h-16 gap-0 bg-white"
+    >
+      <div class="navbar-start ml-5">
+        <a href="index.html"
+          ><img src="/src/imgs/SkoleMad_logo.png" alt="" class="h-8"
+        /></a>
+      </div>
+      <div class="navbar-center lex gap-10">
+        <a
+          href="parent.html"
+          class="font-worksans text-sm font-bold text-black hover:border-b-2 hover:border-black"
+          >FORÆLDERE</a
+        >
+        <a
+          href="supplier.html"
+          class="font-worksans text-sm font-bold text-black hover:border-b-2 hover:border-black"
+          >LEVERANDØR</a
+        >
+        <a
+          href="receiver.html"
+          class="font-worksans text-sm font-bold text-black hover:border-b-2 hover:border-black"
+          >MODTAGER</a
+        >
+        <a
+          href="index.html#info"
+          class="font-worksans text-sm font-bold text-black hover:border-b-2 hover:border-black"
+          >INFO</a
+        >
+      </div>
+      <div class="navbar-end mr-5 gap-5">
+        <a
+          href="contact.html"
+          class="text-sm font-bold text-black hover:border-b-2 hover:border-black"
+          >KONTAKT</a
+        >
+      </div>
+    </header>
+    <header
+      class="laptop:sticky desktop:hidden top-0 flex h-16 w-screen max-w-full items-center justify-start bg-white"
+    >
+      <div class="ml-4 h-12 w-12" id="burgerimg">
+        <img src="imgs/Hamburger_icon.svg.png" alt="" class="h-12 w-12" />
+      </div>
+      <div
+        id="fullscreenmenu"
+        class="sticky left-0 z-50 m-0 mt-96 flex hidden h-screen w-auto flex-col items-center justify-center gap-4 bg-white opacity-95"
+      >
+        <div class="mb-20 flex h-24 w-screen items-center justify-start">
+          <img
+            src="imgs/1727490.svg"
+            alt=""
+            id="exitbutton"
+            class="ml-6 mt-6 h-8 w-8"
+          />
+        </div>
+        <a
+          href="parent.html"
+          class="font-worksans text-ml border-b-2 border-black font-bold text-black hover:border-b-2 hover:border-black"
+          >FORÆLDERE</a
+        >
+        <a
+          href="supplier.html"
+          class="font-worksans text-ml border-b-2 border-black font-bold text-black hover:border-b-2 hover:border-black"
+          >LEVERANDØR</a
+        >
+        <a
+          href="receiver.html"
+          class="font-worksans text-ml border-b-2 border-black font-bold text-black hover:border-b-2 hover:border-black"
+          >MODTAGER</a
+        >
+        <a
+          href="index.html#info"
+          class="font-worksans text-ml border-b-2 border-black font-bold text-black hover:border-b-2 hover:border-black"
+          >INFO</a
+        >
+        <a
+          href="contact.html"
+          class="font-worksans text-ml mb-28 border-b-2 border-black font-bold text-black hover:border-b-2 hover:border-black"
+          >KONTAKT</a
+        >
+      </div>
+    </header>
+
+    <main class="max-w-screen flex flex-col bg-white">
+      <div
+        class="max-w-screen first-bg flex h-auto min-h-screen flex-col items-center justify-center bg-cover bg-no-repeat"
+      >
+        <div
+          class="max-w-screen laptop:mt-20 laptop:mb-14 flex flex-col items-center justify-center gap-2"
+        >
+          <h1
+            class="font-worksans laptop:text-white text-4xl font-bold text-black"
+          >
+            Velkommen til Skolemad.dk
+          </h1>
+          <h2
+            class="font-worksans laptop:text-white text-2xl font-bold text-black"
+          >
+            Hvem er du?
+          </h2>
+        </div>
+        <div
+          class="flew-row laptop:flex-col ml-20 mr-20 flex justify-evenly gap-10"
+        >
+          <a href="receiver.html"
+            ><div
+              class="bg-red-bg laptop:w-40 laptop:h-40 flex h-56 w-56 items-center justify-center rounded-full hover:bg-opacity-80"
+            >
+              <h3
+                class="font-worksans laptop:text-xl text-2xl font-bold text-white"
+              >
+                MODTAGER
+              </h3>
+            </div></a
+          >
+          <a href="parent.html">
+            <div
+              class="bg-green-bg laptop:mt-0 laptop:w-40 laptop:h-40 mt-20 flex h-56 w-56 items-center justify-center rounded-full hover:bg-opacity-80"
+            >
+              <h3
+                class="font-worksans laptop:text-xl text-2xl font-bold text-white"
+              >
+                FORÆLDRER
+              </h3>
+            </div></a
+          >
+          <a href="supplier.html">
+            <div
+              class="bg-blue-bg laptop:w-40 laptop:h-40 flex h-56 w-56 items-center justify-center rounded-full hover:bg-opacity-80"
+            >
+              <h3
+                class="font-worksans laptop:text-xl text-2xl font-bold text-white"
+              >
+                LEVERANDØR
+              </h3>
+            </div></a
+          >
+        </div>
+      </div>
+      <div id="info"></div>
+      <div
+        class="laptop:flex-col mt-20 flex min-h-screen flex-row items-center justify-evenly"
+      >
+        <div class="laptop:w-2/3 flex w-1/3 flex-col">
+          <h1 class="font-worksans text-2xl font-bold text-black">
+            SkoleMad tilbyder et system til at styre fleksibel og rationel
+            levering af
+          </h1>
+          <ul class="mb-8 ml-10 mr-8 mt-8 flex list-disc flex-col gap-3">
+            <li class="font-worksans text-sm font-bold text-black">skolemad</li>
+            <li class="font-worksans text-sm font-bold text-black">
+              mad til firmaer
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              mad ud af huset
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              take-away
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              børnefødelsedage
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              arrangementer
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              og meget mere
+            </li>
+          </ul>
+          <h2 class="font-worksans mt-4 text-xl font-bold text-black">
+            Prisen er lav, og prislisten er åben og ærlig.
+          </h2>
+          <p class="font-ml font-yrsa mt-6 text-black">
+            Hvis du er interesseret i systemet er du velkommen til at kontakte
+            os og tillige alle disse køkkener, for at høre, hvor tilfredse de
+            er.<br />
+            Jersie Data ApS, der står bag systemet, er som krævet godkendt af
+            Forbrugerombudsmanden og anmeldt til Datatilsynet og Finanstilsynet.
+          </p>
+        </div>
+        <div
+          class="laptop:w-4/5 laptop:mt-14 flex w-2/5 flex-col items-center justify-center"
+        >
+          <h2 class="font-worksans mb-10 text-2xl font-bold text-black">
+            SkoleMad benyttes af:
+          </h2>
+          <img src="imgs/homepage-img.png" class="h-auto w-auto" alt="" />
+        </div>
+      </div>
+      <div
+        class="max-w-screen laptop:flex-col laptop:gap-10 mb-28 mt-28 flex h-auto flex-row items-center justify-evenly"
+      >
+        <div
+          class="border-blue-bg flex min-h-screen w-96 flex-col items-center justify-start rounded-3xl border-4"
+        >
+          <h3 class="text-blue-bg font-worksans mt-8 mb-8 text-3xl font-bold">
+            Til Leverandør
+          </h3>
+          <ul class="mb-8 ml-10 mr-8 flex list-disc flex-col gap-4">
+            <li class="font-worksans text-sm font-bold text-black">
+              Fuld adgang til netsystemet via internet, app, mobil eller sms
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Få din egen hjemmeside i systemet, med eget domæne
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Oprette og rette varer med billeder og deklarationer
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Hente eller automatisk få tilsendt produktionslister, følgesedler
+              og etiketter til maden
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Styre priser og rabatter individuelt pr. skole, pr. klasse eller
+              pr. kunde
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Få komplet lagerstyring på styklisteniveau
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Oprette tilbud, tilskuds- og rabatordninger
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Automatisk udsende e-mail og/eller sms-bestillinger til
+              underleverandører
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Styre firmaets eget regnskab med det indbyggede økonomisystem
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Oprette medarbejdere, der kan administrere systemet med
+              individuelle rettigheder
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Få hurtig support døgnet rundt på telefon, mail, chat, Skype og
+              sms.
+            </li>
+          </ul>
+        </div>
+        <div
+          class="border-green-bg flex min-h-screen w-96 flex-col items-center justify-start rounded-3xl border-4"
+        >
+          <h3 class="text-green-bg font-worksans mt-8 mb-8 text-3xl font-bold">
+            Til Forældere
+          </h3>
+          <ul class="mb-8 ml-10 mr-10 flex list-disc flex-col gap-4">
+            <li class="font-worksans text-sm font-bold text-black">
+              Fuld adgang til netsystemet via internet, app, mobil eller sms
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Fuld adgang til netsystemet via internet, app, mobil eller sms
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Indbetale penge med de fleste betalingskort, mobilepay, netbank,
+              betalingssystemet eller kontant
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Automatisk optanking
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Bestille og afbestille mad
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Knytte konti sammen og benytteog gøre det nemt at købe til flere.
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Samlet overblik over hvad der er bestilt og leveret
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Få en email og/eller sms med ved ændringer på kontoen, når der er
+              bestilt eller ikke bestilt mad.
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Få udbetalt penge fra kontoen uden gebyr
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Hurtig hjælp døgnet rundt på telefon, mail, chat, Skype og sms.
+            </li>
+          </ul>
+        </div>
+        <div
+          class="border-red-bg min-h-96 flex w-96 flex-col items-center justify-start rounded-3xl border-4"
+        >
+          <h3 class="text-red-bg font-worksans mt-8 mb-8 text-3xl font-bold">
+            Til Modtager
+          </h3>
+          <h4 class="font-worksans ml-8 mb-8 text-sm font-bold text-black">
+            Modtageren kan være en skole, et firma eller en kommune, og får et
+            system, der:
+          </h4>
+          <ul class="mb-8 ml-10 mr-8 flex list-disc flex-col gap-4">
+            <li class="font-worksans text-sm font-bold text-black">
+              Fuld adgang til netsystemet via internet, app, mobil eller sms
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Fungerer helt uden administrativ indsats
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Er helt uden omkostninger for modtageren
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Giver kunderne den størst mulige frihed i madvalget
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Giver modtageren mulighed for selv at vælge leverandør
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Giver modtageren mulighed for at yde tilskud til ordningen
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Giver modtageren mulighed for at have pengeløs skolebod eller
+              kantine
+            </li>
+            <li class="font-worksans text-sm font-bold text-black">
+              Giver modtageren mulighed for at være medadministrator på
+              netsystemet
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer
+      class="laptop:flex-col laptop:gap-20 laptop:items-center flex h-auto flex-row items-start justify-center gap-52 border-t-2 border-black bg-white pt-20"
+    >
+      <div class="laptop:flex-col flex flex-row gap-20">
+        <div class="flex flex-col gap-6">
+          <h2 class="font-worksans text-lg font-bold text-black">
+            Skift over til:
+          </h2>
+
+          <p class="font-worksans ml-4 text-sm text-black">Forældre</p>
+          <p class="font-worksans ml-4 text-sm text-black">Modtager</p>
+          <p class="font-worksans ml-4 text-sm text-black">Leverandør</p>
+        </div>
+        <div class="flex flex-col gap-6">
+          <h2 class="font-worksans text-lg font-bold text-black">
+            Om skolemad:
+          </h2>
+          <p class="font-worksans ml-4 text-sm text-black">Om skolemad</p>
+          <p class="font-worksans ml-4 text-sm text-black">FAQ</p>
+          <p class="font-worksans ml-4 text-sm text-black">Kontakt</p>
+        </div>
+        <div class="flex flex-col gap-6">
+          <h2 class="font-worksans text-lg font-bold text-black">Generelt:</h2>
+          <p class="font-worksans ml-4 text-sm text-black">Vilkår</p>
+          <p class="font-worksans ml-4 text-sm text-black">Privatspolitik</p>
+          <p class="font-worksans ml-4 text-sm text-black">Glemt kode</p>
+        </div>
+      </div>
+      <div>
+        <div class="w-64">
+          <h2 class="font-worksans text-2xl font-bold text-black">
+            Vil du holde dig opdateret?
+          </h2>
+          <p class="text-ml font-worksans mb-6 font-bold text-black">
+            Tilmeld dig nyhesbrevet her:
+          </p>
+          <div class="font-worksans mb-10 border-b-2 border-black py-2">
+            <p class="text-xs text-black">Indsæt din email</p>
+          </div>
+        </div>
+        <img src="/src/imgs/SkoleMad_logo.png" alt="" class="mb-20 h-14" />
+      </div>
+    </footer>
     <script type="module" src="index.js"></script>
   </body>
 </html>

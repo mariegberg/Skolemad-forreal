@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage - Skolemad</title>
+    <link rel="stylesheet" href="tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika:wght@300;400;500;600;700&family=Yrsa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika:wght@300;400;500;600;700&family=Yrsa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-white">
+    <header
+      class="navbar laptop:hidden
+       text-neutral-content swing-in-top-fwd bg-green-bg fixed sticky top-0 z-50 h-16 gap-0 bg-opacity-60"
+    >
+      <div class="navbar-start ml-5">
+        <a href="index.html"
+          ><img src="/src/imgs/SkoleMad_logo.png" alt="" class="h-8"
+        /></a>
+      </div>
+      <div class="navbar-center lex gap-10">
+        <a
+          href="parent.html"
+          class="text-sm font-bold text-black hover:text-white"
+          >FORELDRE</a
+        >
+        <a
+          href="supplier.html"
+          class="font-worksans text-sm font-bold text-black hover:text-white"
+          >LEVERANDØR</a
+        >
+        <a
+          href="receiver.html"
+          class="font-worksans text-sm font-bold text-black hover:text-white"
+          >MODTAGER</a
+        >
+        <a
+          href="index.html#info"
+          class="font-worksans text-sm font-bold text-black hover:text-white"
+          >INFO</a
+        >
+      </div>
+      <div class="navbar-end mr-5 gap-5">
+        <a
+          href="signup1.html"
+          class="font-worksans text-sm font-bold text-black hover:text-white"
+          >OPRET KONTO</a
+        >
+
+        <div class="dropdown dropdown-end max-h-96">
+          <label
+            tabindex="0"
+            class="btn bg-green-button font-worksans hover:bg-green-hover gap-2 rounded-2xl border-4 border-yellow-100 text-sm text-white shadow-2xl"
+            >LOG IND</label
+          >
+          <div
+            tabindex="0"
+            class="menu dropdown-content bg-green-bg rounded-box mt-4 max-h-96 w-96 border-2 border-black p-2 shadow"
+          >
+            <div
+              class="min-h-screen w-full items-center pt-6 sm:justify-center sm:pt-0"
+            >
+              <div class="mx-auto max-h-96 w-full p-5 sm:max-w-md">
+                <h2
+                  class="font-worksans mb-5 text-center text-2xl font-bold text-black"
+                >
+                  LOG IND
+                </h2>
+                <form class="max-h-96">
+                  <div class="mb-4">
+                    <label
+                      class="font-worksans mb-1 block text-black"
+                      for="email"
+                      >Email</label
+                    >
+                    <input
+                      id="email"
+                      type="text"
+                      name="email"
+                      class="mt-1 block w-full rounded-md border border-gray-300 py-2 px-3 shadow-sm focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-200 focus:ring-opacity-50 disabled:bg-gray-100"
+                    />
+                  </div>
+                  <div class="mb-4">
+                    <label
+                      class="font-worksans mb-1 block text-black"
+                      for="password"
+                      >Password</label
+                    >
+                    <input
+                      id="password"
+                      type="password"
+                      name="password"
+                      class="mt-1 block w-full rounded-md border border-gray-300 py-2 px-3 shadow-sm focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-200 focus:ring-opacity-50 disabled:bg-gray-100"
+                    />
+                  </div>
+                  <div class="mt-6 flex items-center justify-between">
+                    <div class="flex items-center">
+                      <input
+                        id="remember_me"
+                        type="checkbox"
+                        class="focus:border-accent focus:ring-accent border border-gray-300 text-blue-600 shadow-sm focus:ring focus:ring-opacity-50"
+                      />
+                      <label
+                        for="remember_me"
+                        class="font-worksans ml-2 block text-sm leading-5 text-gray-900"
+                      >
+                        Remember me
+                      </label>
+                    </div>
+                    <a href="#" class="font-worksans text-sm text-red-600">
+                      Forgot password?
+                    </a>
+                  </div>
+                  <div class="flex items-center justify-center">
+                    <a href="orderfood.html">
+                      <button
+                        class="btn hover:bg-green-hover bg-green-button mt-6 gap-2 rounded-2xl border-4 border-yellow-100 text-sm text-black shadow-2xl"
+                      >
+                        LOG IND
+                      </button></a
+                    >
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header
+    class="laptop:sticky desktop:hidden top-0 flex h-16 w-screen max-w-full items-center justify-start bg-green-bg bg-opacity-60"
+  >
+    <div class="ml-4 h-12 w-12" id="burgerimg">
+      <img src="imgs/Hamburger_icon.svg.png" alt="" class="h-12 w-12" />
+    </div>
+    <div class="navbar-end">
+    
+
+    <div
+      id="fullscreenmenu"
+      class="sticky left-0 z-50 m-0 mt-96 flex hidden h-screen w-screen flex-col items-center justify-center gap-4 bg-green-bg opacity-95"
+    >
+      <div class="mb-8 flex h-24 w-screen items-center justify-start">
+        <img
+          src="imgs/1727490.svg"
+          alt=""
+          id="exitbutton"
+          class="ml-6 mt-6 h-8 w-8"
+        />
+      </div>
+      <a href="menu.html"            class="font-worksans text-ml border-b-2 border-black font-bold text-black hover:border-b-2 hover:border-black"
+      >UGENS MENU</a>
+      <a
+        href="orderfood.html"
+        class="font-worksans text-ml  border-b-2 border-black font-bold text-black hover:border-b-2 hover:border-black"
+
+        >BESTIL</a
+      >
+     
+      <a href="balance.html"            class="font-worksans text-ml  border-b-2 border-black font-bold text-black hover:border-b-2 hover:border-black"
+
+      >KONTOSALDO</a
+    >
+      <a href="infoparents.html"            class="font-worksans text-ml border-b-2 border-black font-bold text-black hover:border-b-2 hover:border-black"
+
+        >INFO</a
+      >
+      <a
+        href="contact.html"
+        class="font-worksans text-ml mb-28 border-b-2 border-black font-bold text-black hover:border-b-2 hover:border-black"
+        >KONTAKT</a
+      >
+      <div >
+        <div class=" mr-5 gap-5">
+          <a
+            href="signup1.html"
+            class="font-worksans text-sm font-bold text-black hover:text-white"
+            >OPRET KONTO</a
+          >
+  
+          <div class="dropdown dropdown-end max-h-96">
+            <label
+              tabindex="0"
+              class="btn bg-green-button font-worksans hover:bg-green-hover gap-2 rounded-2xl border-4 border-yellow-100 text-sm text-white shadow-2xl"
+              >LOG IND</label
+            >
+            <div
+              tabindex="0"
+              class="menu dropdown-content bg-green-bg rounded-box mt-4 max-h-96 w-96 border-2 border-black p-2 shadow"
+            >
+              <div
+                class="min-h-screen w-full items-center pt-6 sm:justify-center sm:pt-0"
+              >
+                <div class="mx-auto max-h-96 w-full p-5 sm:max-w-md">
+                  <h2
+                    class="font-worksans mb-5 text-center text-2xl font-bold text-black"
+                  >
+                    LOG IND
+                  </h2>
+                  <form class="max-h-96">
+                    <div class="mb-4">
+                      <label
+                        class="font-worksans mb-1 block text-black"
+                        for="email"
+                        >Email</label
+                      >
+                      <input
+                        id="email"
+                        type="text"
+                        name="email"
+                        class="mt-1 block w-full rounded-md border border-gray-300 py-2 px-3 shadow-sm focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-200 focus:ring-opacity-50 disabled:bg-gray-100"
+                      />
+                    </div>
+                    <div class="mb-4">
+                      <label
+                        class="font-worksans mb-1 block text-black"
+                        for="password"
+                        >Password</label
+                      >
+                      <input
+                        id="password"
+                        type="password"
+                        name="password"
+                        class="mt-1 block w-full rounded-md border border-gray-300 py-2 px-3 shadow-sm focus:border-blue-300 focus:outline-none focus:ring focus:ring-blue-200 focus:ring-opacity-50 disabled:bg-gray-100"
+                      />
+                    </div>
+                    <div class="mt-6 flex items-center justify-between">
+                      <div class="flex items-center">
+                        <input
+                          id="remember_me"
+                          type="checkbox"
+                          class="focus:border-accent focus:ring-accent border border-gray-300 text-blue-600 shadow-sm focus:ring focus:ring-opacity-50"
+                        />
+                        <label
+                          for="remember_me"
+                          class="font-worksans ml-2 block text-sm leading-5 text-gray-900"
+                        >
+                          Remember me
+                        </label>
+                      </div>
+                      <a href="#" class="font-worksans text-sm text-red-600">
+                        Forgot password?
+                      </a>
+                    </div>
+                    <div class="flex items-center justify-center">
+                      <a href="orderfood.html">
+                        <button
+                          class="btn hover:bg-green-hover bg-green-button mt-6 gap-2 rounded-2xl border-4 border-yellow-100 text-sm text-black shadow-2xl"
+                        >
+                          LOG IND
+                        </button></a
+                      >
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </header>
+
+    <main class="max-w-screen mb-28 bg-white">
+      <div
+        class="max-w-screen laptop:items-center laptop:flex-col max-w-screen flex min-h-screen"
+      >
+        <div class="laptop:w-auto h-auto w-1/2">
+          <img src="/src/imgs/parent-hero.png" alt="" class="h-auto w-auto" />
+        </div>
+        <div
+          class="laptop:w-2/3 laptop:mt-10 ml-20 flex h-auto w-2/5 flex-col items-start justify-center"
+        >
+          <p class="font-worksans w-4/5 text-3xl font-bold text-black">
+            Kunden får adgang til et online system, og kan nemt og enkelt for
+            eksempel
+          </p>
+
+          <ul class="mt-4 ml-4 list-disc">
+            <li class="font-worksans mt-2 text-lg font-bold text-black">
+              oprette en konto, logge ind og ud med selvvalgt kode
+            </li>
+            <li class="font-worksans mt-2 text-lg font-bold text-black">
+              overføre penge mellem konti
+            </li>
+            <li class="font-worksans mt-2 text-lg font-bold text-black">
+              få et overblik over hvad der er bestilt og leveret
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="laptop:flex-col mt-20 mb-20 flex flex-row items-center justify-evenly"
+      >
+        <div
+          class="laptop:w-2/3 flex h-auto w-1/3 flex-col items-center justify-center gap-10"
+        >
+          <a href="signup1.html">
+            <button
+              class="btn hover:bg-green-hover bg-green-button laptop:mt-4 mt-14 w-36 gap-2 rounded-2xl border-4 border-yellow-100 text-sm text-white shadow-2xl"
+            >
+              OPRET KONTO
+            </button></a
+          >
+          <p class="font-yrsa text-lg text-black">
+            SkoleMad vil foreslå en leverandør der i forvejen er i området,
+            eller modtageren kan selv vælge en leverandør. Hvis der ikke er en
+            leverandør i området i forvejen, og modtageren ikke selv har valgt,
+            vil SkoleMad gøre hvad der er muligt for at hjælpe med at finde en
+            passende leverandør.
+          </p>
+          <p class="font-yrsa text-lg text-black">
+            Der er ikke noget fast omsætningskrav, det afhænger både af
+            afstanden fra modtageren til leverandøren og af om leverandøren har
+            andre modtagere i nærheden. Normalt aftales en prøveperiode, og
+            aftalen kan selvfølgelig opsiges fra begge sider med et aftalt
+            varsel.
+          </p>
+          <p class="font-yrsa text-lg text-black">
+            Hvilken mad der tilbydes og til hvilke priser aftales også mellem
+            modtageren og leverandøren. De forskellige leverandører til systemet
+            leverer forskellig mad til forskellige priser.
+          </p>
+          <p class="font-yrsa text-lg text-black">
+            Hvis skolen integrerer skolemaden i undervisningen, kan momsen
+            spares ved at skolen går ind som køber og sælger af maden. Læs mere
+            om momsen her.
+          </p>
+          <p class="font-yrsa text-lg text-black">
+            Kontakt os gerne for en uforpligtende samtale om, hvad I kunne ønske
+            jer.
+          </p>
+        </div>
+        <div class="laptop:w-4/5 laptop:mt-10 flex w-1/2 flex-col items-center">
+          <div class="w-3/4 overflow-auto rounded-xl border-2 border-black">
+            <div
+              class="bg-green-bg flex h-14 w-auto items-center justify-center rounded-t-xl"
+            >
+              <h2 class="font-worksans text-2xl font-bold text-black">MENU</h2>
+            </div>
+            <div
+              class="mt-8 mb-4 flex w-auto flex-col items-center justify-center"
+            >
+              <div class="flex items-center">
+                <h3 class="text-ml font-worksans font-bold text-black">
+                  UGE 15
+                </h3>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chevron-down ml-2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </div>
+              <div class="mt-2 mb-4 w-56 border-b-2 border-black"></div>
+            </div>
+            <div
+              class="mt-4 mb-4 flex w-auto flex-col items-center justify-center"
+            >
+              <h4 class="font-worksans mb-2 text-sm font-bold text-black">
+                Mandag - 21.03
+              </h4>
+              <p
+                class="font-yrsa text-left text-sm italic text-inherit text-black"
+              >
+                Sweet potato suppe med lime og koriander<br /><br />Nybagt brød
+              </p>
+              <div class="mt-5 w-24 border-b-2"></div>
+            </div>
+            <div
+              class="mt-4 mb-4 flex w-auto flex-col items-center justify-center"
+            >
+              <h4 class="font-worksans mb-2 mb-2 text-sm font-bold text-black">
+                Tirsdag - 22.03
+              </h4>
+              <p
+                class="font-yrsa text-left text-sm italic text-inherit text-black"
+              >
+                Sweet potato suppe med lime og koriander<br /><br />Nybagt brød
+              </p>
+              <div class="mt-5 w-24 border-b-2"></div>
+            </div>
+            <div
+              class="mt-4 mb-4 flex w-auto flex-col items-center justify-center"
+            >
+              <h4 class="font-worksans mb-2 mb-2 text-sm font-bold text-black">
+                Onsdag - 23.03
+              </h4>
+              <p
+                class="font-yrsa text-left text-sm italic text-inherit text-black"
+              >
+                Sweet potato suppe med lime og koriander<br /><br />Nybagt brød
+              </p>
+              <div class="mt-5 w-24 border-b-2"></div>
+            </div>
+            <div
+              class="mt-4 mb-4 flex w-auto flex-col items-center justify-center"
+            >
+              <h4 class="font-worksans mb-2 mb-2 text-sm font-bold text-black">
+                Torsdag - 24.03
+              </h4>
+              <p
+                class="font-yrsa text-left text-sm italic text-inherit text-black"
+              >
+                Sweet potato suppe med lime og koriander<br /><br />Nybagt brød
+              </p>
+              <div class="mt-5 w-24 border-b-2"></div>
+            </div>
+            <div
+              class="mt-4 mb-10 flex w-auto flex-col items-center justify-center"
+            >
+              <h4 class="font-worksans mb-2 mb-2 text-sm font-bold text-black">
+                Fredag - 25.03
+              </h4>
+              <p
+                class="font-yrsa text-left text-sm italic text-inherit text-black"
+              >
+                Sweet potato suppe med lime og koriander<br /><br />Nybagt brød
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="bg-pink bg-green-bg laptop:flex-col laptop:gap-20 laptop:items-center flex h-auto flex-row items-start justify-center gap-52 bg-opacity-60 pt-20"
+    >
+      <div class="laptop:flex-col flex flex-row gap-20">
+        <div class="flex flex-col gap-6">
+          <h2 class="font-worksans text-2xl font-bold text-black">
+            Skift over til:
+          </h2>
+
+          <p class="font-worksans ml-4 text-lg font-medium text-black">
+            Forældre
+          </p>
+          <p class="font-worksans ml-4 text-lg font-medium text-black">
+            Modtager
+          </p>
+          <p class="font-worksans ml-4 text-lg font-medium text-black">
+            Leverandør
+          </p>
+        </div>
+        <div class="flex flex-col gap-6">
+          <h2 class="font-worksans text-2xl font-bold text-black">
+            Om skolemad:
+          </h2>
+          <p class="font-worksans ml-4 text-lg font-medium text-black">
+            Om skolemad
+          </p>
+          <p class="font-worksans ml-4 text-lg font-medium text-black">FAQ</p>
+          <p class="font-worksans ml-4 text-lg font-medium text-black">
+            Kontakt
+          </p>
+        </div>
+        <div class="flex flex-col gap-6">
+          <h2 class="font-worksans text-2xl font-bold text-black">Generelt:</h2>
+          <p class="font-worksans ml-4 text-lg font-medium text-black">
+            Vilkår
+          </p>
+          <p class="font-worksans ml-4 text-lg font-medium text-black">
+            Privatspolitik
+          </p>
+          <p class="font-worksans ml-4 text-lg font-medium text-black">
+            Glemt kode
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="w-64">
+          <h2 class="font-worksans text-2xl font-bold text-black">
+            Vil du holde dig opdateret?
+          </h2>
+          <p class="text-ml font-worksans mt-4 mb-6 font-bold text-black">
+            Tilmeld dig nyhesbrevet her:
+          </p>
+          <div class="font-worksans mb-10 border-b-2 border-black py-2">
+            <p class="text-xs text-black">Indsæt din email</p>
+          </div>
+        </div>
+        <img src="/src/imgs/SkoleMad_logo.png" alt="" class="mb-20 h-14" />
+      </div>
+    </footer>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

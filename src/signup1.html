@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage - Skolemad</title>
+    <link rel="stylesheet" href="tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika:wght@300;400;500;600;700&family=Yrsa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika:wght@300;400;500;600;700&family=Yrsa:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-white">
+    <header
+      class="navbar laptop:hidden text-neutral-content swing-in-top-fwd bg-green-bg fixed sticky top-0 z-50 h-16 gap-0 bg-white bg-opacity-60"
+    >
+      <div class="navbar-start ml-5 gap-5">
+        <a href="index.html"
+          ><img src="/src/imgs/SkoleMad_logo.png" alt="" class="h-8"
+        /></a>
+      </div>
+      <div class="navbar-center lex gap-10">
+        <a
+          href="parent.html"
+          class="font-worksans text-sm font-bold text-black hover:text-white"
+          >FORÆLDERE</a
+        >
+        <a
+          href="supplier.html"
+          class="font-worksans text-sm font-bold text-black hover:text-white"
+          >LEVERANDØR</a
+        >
+        <a
+          href="receiver.html"
+          class="font-worksans text-sm font-bold text-black hover:text-white"
+          >MODTAGER</a
+        >
+
+        <a
+          href="index.html#info"
+          class="font-worksans text-sm font-bold text-black hover:text-white"
+          >INFO</a
+        >
+      </div>
+      <div class="navbar-end mr-5 gap-5">
+        <a
+          href="contact.html"
+          class="text-sm font-bold text-black hover:text-gray-400 hover:text-gray-400"
+          >KONTAKT</a
+        >
+      </div>
+    </header>
+
+    <header
+      class="laptop:sticky desktop:hidden bg-green-bg top-0 flex h-16 w-screen max-w-full items-center justify-start bg-opacity-60 bg-opacity-60"
+    >
+      <div class="ml-4 h-12 w-12" id="burgerimg">
+        <img src="imgs/Hamburger_icon.svg.png" alt="" class="h-12 w-12" />
+      </div>
+      <div
+        id="fullscreenmenu"
+        class="bg-green-bg sticky left-0 z-50 m-0 mt-96 flex hidden h-screen w-auto flex-col items-center justify-center gap-4 opacity-95"
+      >
+        <div class="mb-20 flex h-24 w-screen items-center justify-start">
+          <img
+            src="imgs/1727490.svg"
+            alt=""
+            id="exitbutton"
+            class="ml-6 mt-6 h-8 w-8"
+          />
+        </div>
+        <a
+          href="parent.html"
+          class="font-worksans text-ml border-b-2 border-black font-bold text-black hover:border-b-2 hover:border-black"
+          >FORÆLDERE</a
+        >
+        <a
+          href="supplier.html"
+          class="font-worksans text-ml border-b-2 border-black font-bold text-black hover:border-b-2 hover:border-black"
+          >LEVERANDØR</a
+        >
+        <a
+          href="receiver.html"
+          class="font-worksans text-ml border-b-2 border-black font-bold text-black hover:border-b-2 hover:border-black"
+          >MODTAGER</a
+        >
+
+        <a
+          href="index.html#info"
+          class="font-worksans text-ml border-b-2 border-black font-bold text-black hover:border-b-2 hover:border-black"
+          >INFO</a
+        >
+        <a
+          href="contact.html"
+          class="font-worksans text-ml mb-28 border-b-2 border-black font-bold text-black hover:border-b-2 hover:border-black"
+          >KONTAKT</a
+        >
+      </div>
+    </header>
+
+    <main
+      class="max-w-screen laptop:flex-col laptop:justify-center flex h-auto min-h-screen flex-row items-center justify-evenly"
+    >
+      <div class="laptop:w-2/3 laptop:mt-14 flex h-auto w-1/3 flex-col">
+        <h1 class="mb-8 text-3xl font-bold text-black">OPRET KONTO</h1>
+        <div
+          class="bg-green-bg flex h-10 w-auto items-center justify-start rounded-xl bg-opacity-50"
+        >
+          <h3 class="text-ml font-worksans ml-4 text-black">
+            Dit navn og efternavn...
+          </h3>
+        </div>
+
+        <div
+          class="bg-green-bg mt-2 flex h-10 w-auto items-center justify-between rounded-xl bg-opacity-50"
+        >
+          <h3 class="text-ml font-worksans ml-4 text-black">Mobilnummer...</h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-chevron-down mr-4"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </div>
+        <div
+          class="bg-green-bg mt-2 flex h-10 w-auto items-center justify-between rounded-xl bg-opacity-50"
+        >
+          <h3 class="text-ml font-worksans ml-4 text-black">E-mail...</h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-chevron-down mr-4"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </div>
+        <div
+          class="bg-green-bg mt-2 flex h-10 w-auto items-center justify-between rounded-xl bg-opacity-50"
+        >
+          <h3 class="text-ml font-worksans ml-4 text-black">Kodeord...</h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-chevron-down mr-4"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </div>
+        <div
+          class="bg-green-bg mt-2 flex h-10 w-auto items-center justify-between rounded-xl bg-opacity-50"
+        >
+          <h3 class="text-ml font-worksans ml-4 text-black">
+            Bekræft kodeord...
+          </h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-chevron-down mr-4"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </div>
+        <div class="mt-2 flex h-10 items-center justify-evenly">
+          <h3 class="text-ml font-worksans text-black">Modtag nyheder via:</h3>
+          <div class="flex items-center justify-evenly gap-2">
+            <div class="bg-green-bg h-10 w-10 rounded-xl bg-opacity-50"></div>
+            <h3 class="text-ml font-worksans text-black">E-mail</h3>
+          </div>
+          <div class="flex items-center justify-evenly gap-2">
+            <div class="bg-green-bg h-10 w-10 rounded-xl bg-opacity-50"></div>
+            <h3 class="text-ml font-worksans text-black">SMS</h3>
+          </div>
+        </div>
+        <div class="mt-10 flex w-auto items-center justify-end">
+          <a href="signup2.html"
+            ><button
+              class="btn font-worksans hover:bg-green-hover bg-green-button w-28 gap-2 rounded-2xl border-4 border-yellow-100 text-sm text-black text-black shadow-2xl"
+            >
+              NÆSTE
+            </button></a
+          >
+        </div>
+      </div>
+      <div class="laptop:w-2/3 laptop:mt-14 laptop:mb-14 mr-10 h-auto w-1/3">
+        <img src="/src/imgs/tomatoes3.png" alt="" />
+      </div>
+    </main>
+    <footer
+      class="bg-pink bg-green-bg laptop:flex-col laptop:gap-20 laptop:items-center flex h-auto flex-row items-start justify-center gap-52 bg-opacity-60 pt-20"
+    >
+      <div class="laptop:flex-col flex flex-row gap-20">
+        <div class="flex flex-col gap-6">
+          <h2 class="font-worksans text-2xl font-bold text-black">
+            Skift over til:
+          </h2>
+
+          <p class="font-worksans ml-4 text-lg font-medium text-black">
+            Forældre
+          </p>
+          <p class="font-worksans ml-4 text-lg font-medium text-black">
+            Modtager
+          </p>
+          <p class="font-worksans ml-4 text-lg font-medium text-black">
+            Leverandør
+          </p>
+        </div>
+        <div class="flex flex-col gap-6">
+          <h2 class="font-worksans text-2xl font-bold text-black">
+            Om skolemad:
+          </h2>
+          <p class="font-worksans ml-4 text-lg font-medium text-black">
+            Om skolemad
+          </p>
+          <p class="font-worksans ml-4 text-lg font-medium text-black">FAQ</p>
+          <p class="font-worksans ml-4 text-lg font-medium text-black">
+            Kontakt
+          </p>
+        </div>
+        <div class="flex flex-col gap-6">
+          <h2 class="font-worksans text-2xl font-bold text-black">Generelt:</h2>
+          <p class="font-worksans ml-4 text-lg font-medium text-black">
+            Vilkår
+          </p>
+          <p class="font-worksans ml-4 text-lg font-medium text-black">
+            Privatspolitik
+          </p>
+          <p class="font-worksans ml-4 text-lg font-medium text-black">
+            Glemt kode
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="w-64">
+          <h2 class="font-worksans text-2xl font-bold text-black">
+            Vil du holde dig opdateret?
+          </h2>
+          <p class="text-ml font-worksans mt-4 mb-6 font-bold text-black">
+            Tilmeld dig nyhesbrevet her:
+          </p>
+          <div class="font-worksans mb-10 border-b-2 border-black py-2">
+            <p class="text-xs text-black">Indsæt din email</p>
+          </div>
+        </div>
+        <img src="/src/imgs/SkoleMad_logo.png" alt="" class="mb-20 h-14" />
+      </div>
+    </footer>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
